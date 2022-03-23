@@ -39,7 +39,11 @@ ostream& operator<<(ostream& out, const Hitung& keluaran) {
 	out<<"Harga Total Ayam Goreng : "<<keluaran.x<<endl;
 	out<<"Jumlah Ayam Bakar \t: "<<keluaran.d<<endl;
 	out<<"Harga Total Ayam Bakar\t: "<<keluaran.y<<endl;
-	out<<"Diskon \t\t\t: 10%"<<endl;
+	if(keluaran.jumlah>=45000){
+		out<<"Diskon \t\t\t: 10%"<<endl;
+	}else{
+		out<<"Diskon \t\t\t: 0%"<<endl;
+	}
 	out<<"Potongan Harga\t\t: "<<keluaran.diskon<<endl;
 	out<<"Harga Jumlah total \t: "<<keluaran.jumlah<<endl;
 	cout<<"==============================="<<endl;
