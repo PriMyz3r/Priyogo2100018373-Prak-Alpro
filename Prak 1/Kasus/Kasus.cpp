@@ -53,4 +53,4 @@ main(){//manggil dari langit
 	getch();
 	return 0;
 }
-//
+
