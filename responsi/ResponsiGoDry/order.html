@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Techro is a modern and fully responsive Template by WebThemez.">
+    <meta name="author" content="webThemez.com">
+    <title>GO-DRY</title>
+    <link rel="favicon" href="assets/images/favicon.png">
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Order</a></li>
+                    <li><a href="admin.php">Admin</a></li>                    
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- /.navbar -->
+
+    <header id="head" class="secondary"></header>
+
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <!-- Article content -->
+            <form name="my_form" id="my_form" class="form-order" action="orderan.php" method="post" onsubmit="return validateForm()">
+                <header class="page-header">
+					<h1 class="page-title">Orderan Anda</h1>
+				</header>
+                <label for="nama">Nama Anda :</label><br>
+                <input type="text" id="nama" name="nama" value="" size="30" required><br>
+                <label for="jumlah">Jumlah Pakaian :</label><br>
+                <input type="number" id="jumlah" name="jumlah" value="" required><br>
+                <label for="paket">Pilih Paket :</label><br>
+                <select id="paket" name="paket" required>
+                    <option disabled selected value>-- Silahkan pilih paket --</option>
+                    <option value="Dengan pelembut dan pewangi">Dengan pelembut dan pewangi</option>
+                    <option value="Tanpa pelembut dan pewangi">Tanpa pelembut dan pewangi</option>
+                    <option value="Pakaian khusus">Pakaian khusus</option>
+                </select><br>
+                <label for="tanggal">Tanggal Order :</label><br>
+                <input type="datetime-local" id="tanggal" name="tanggal" required><br>
+                <label for="alamat">Alamat :</label><br>
+                <textarea id="alamat" name="alamat" value="" rows="4" cols="35" required></textarea><br>
+                <label for="note">Note :</label><br>
+                <textarea id="note" name="note" value="" rows="4" cols="35" required></textarea><br><br>
+                <input type="submit" id="btn" value="Submit"><input type="reset" id="btn" value="Reset">
+            </form> 
+            <br><br>       
+        </div>
+    </div>
+    <!-- /container -->
+    <footer id="footer">
+
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-4 panel contact">
+                        <h3 class="panel-title">Contact Info</h4>
+						<div class="panel-body">
+                            <p>Kontak info kami melayani 24/7</p>
+                            <ul>
+                                <li><i class="fa fa-phone"></i> 1-123-345-6789</li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i> contact@webthemez.com</a></li>
+                                <li><i class="fa fa-flag"></i> 123 Smith Drive, Baltimore, MD 21212</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 panel">
+                        <h3 class="panel-title">Ikuti kami</h3>
+                        <div class="panel-body">
+                            <p class="follow-me-icons">
+                                <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                                <a href=""><i class="fa fa-github fa-2"></i></a>
+                                <a href=""><i class="fa fa-facebook fa-2"></i></a>
+                                <a href=""><i class="fa fa-youtube fa-2"></i></a>
+                                <a href=""><i class="fa fa-pinterest fa-2"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /row of panels -->
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="simplenav">
+                                <a href="index.html">Home</a> | 
+								<a href="order.html">Order</a> |
+								<a href="admin.php">Admin</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="text-right">
+                                Copyright &copy; 2022. Made by Anugrah Akbar Priyogo Wiratama
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row of panels -->
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
